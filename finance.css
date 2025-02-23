@@ -1,0 +1,185 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+  }
+  
+  /* Header */
+  header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  .burger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .burger-menu .line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #00aaff;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .form-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #ffdd57;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #ffba00;
+  }
+  
+  /* Transactions List */
+  .transaction-list {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+  }
+  
+  .transaction-list h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  .transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+  }
+  
+  .transaction-item button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .transaction-item button:hover {
+    background-color: #ff1a1a;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    font-size: 0.9rem;
+  }
+  
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .navbar .nav-links {
+      display: none;
+    }
+  
+    .burger-menu {
+      display: flex;
+    }
+  
+    .form-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .hero h2 {
+      font-size: 2rem;
+    }
+  }
